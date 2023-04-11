@@ -2,5 +2,17 @@
   max-width: 880px;
   margin-top: 67px;
   margin-bottom: 60px;
+  padding-left: 19px;
   color: #545454;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-left: 19px;
+    padding-right 19px: ;
+  }
+}
+
+@media screen and (max-width: 768px){
+  
 }
