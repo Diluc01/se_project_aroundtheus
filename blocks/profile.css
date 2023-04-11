@@ -83,6 +83,12 @@
     padding-right: 62px;*/
   }
 
+  .profile__image {
+    margin-top: 38px;
+    margin-bottom: 26px;
+    margin-right: 0;
+  }
+
   .profile__title {
     font-size: 22px;
   }
@@ -90,10 +96,18 @@
   .profile__description {
     width: 100%;
     text-align: center;
+    margin-bottom: 36px;
   }
 
   .profile__add-button {
     margin: 0;
     width: 100%;
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    padding: 5%;
   }
 }
