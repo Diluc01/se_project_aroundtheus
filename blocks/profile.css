@@ -106,7 +106,23 @@
   }
 }
 
+@media screen and (max-width: 568px) {
+  .profile__title {
+    font-size: 23px;
+  }
+
+  .profile {
+    padding: 5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .profile {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 916px) {
   .profile {
     padding: 5%;
   }
