@@ -2,9 +2,10 @@
   /*margin: 30px;*/
   max-width: 880px;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
-.card__list {
+.cards__list {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 282px);
@@ -47,6 +48,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card__like-button {
@@ -54,14 +57,16 @@
     no-repeat;
   width: 21px;
   height: 18px;
+  border: none;
+}
+
+.card__like-button {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 320px) {
   .cards {
-  }
-
-  .page__section {
-    margin: 0;
   }
 
   .card__list {
@@ -72,14 +77,12 @@
 
 @media screen and (max-width: 568px) {
   .cards {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 @media screen and (max-width: 768px) {
   .cards {
-    margin-left: 0;
-    margin-right: 0;
+    /*margin-left: 0;
+    margin-right: 0;*/
   }
 }
 
