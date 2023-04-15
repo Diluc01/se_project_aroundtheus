@@ -60,7 +60,7 @@
   border: none;
 }
 
-.card__like-button {
+.card__like-button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
