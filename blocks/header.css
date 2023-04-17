@@ -1,17 +1,20 @@
 .header {
-  border-bottom: 1px solid rgba(84, 84, 84, 1);
-  margin-top: 45px;
+  border-bottom: 1px solid rgb(84, 84, 84);
+  opacity: 0.7;
+  padding-top: 45px;
   padding-bottom: 41px;
   margin-bottom: 36px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 320px) {
   .header {
     padding-left: 27px;
     padding-top: 28px;
+    padding-bottom: 28px;
+    max-width: unset;
   }
-}
-
-@media screen and (max-width: 768px) {
 }
