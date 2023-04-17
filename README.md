@@ -25,3 +25,5 @@ Project name: Around The US
 This project uses CSS grid and media querys to change the project at different resolutions. This website is supposed to be responsive.
 
 This project uses grid, media querys and responsive design.
+
+Github pages link: https://diluc01.github.io/se_project_aroundtheus/
