@@ -30,7 +30,8 @@
 
 .profile__edit-button:hover {
   cursor: pointer;
-  color: rgba(255, 255, 255, 1);
+  /*color: rgba(255, 255, 255, 1);*/
+  opacity: 0.6;
 }
 
 .profile__add-button {
@@ -44,7 +45,8 @@
 
 .profile__add-button:hover {
   cursor: pointer;
-  color: rgba(255, 255, 255, 1);
+  /*color: rgba(255, 255, 255, 1);*/
+  opacity: 0.6;
 }
 
 .profile__title {
