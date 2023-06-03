@@ -1,8 +1,8 @@
-.preview__image-content {
+.modal__image-content {
   position: relative;
 }
 
-.preview__image-content_type-open {
+.modal__image-content_type-open {
   background: none;
   padding: 0;
   max-height: 75vh;
