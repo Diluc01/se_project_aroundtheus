@@ -36,7 +36,7 @@ const addCardModal = document.querySelector("#add-card-modal");
 const imageModal = document.querySelector("#preview-image-modal");
 const profileFormElement = editProfileModal.querySelector(".modal__form");
 const addCardFormElement = addCardModal.querySelector(".modal__form");
-const modalImageElement = imageModal.querySelector(".popup__image");
+const modalImageElement = imageModal.querySelector(".preview__image");
 const modalCaption = imageModal.querySelector(".preview__caption");
 
 //buttons and other DOM nodes
@@ -54,8 +54,10 @@ const jobInput = profileFormElement.querySelector(
   ".modal__input_type_description"
 );
 
-const cardTitleInput = addCardFormElement.querySelector(".input_type_title");
-const cardUrlInput = addCardFormElement.querySelector(".input_type_url");
+const cardTitleInput = addCardFormElement.querySelector(
+  ".modal__input_type_title"
+);
+const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");

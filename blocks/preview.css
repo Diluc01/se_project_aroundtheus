@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.preview__image_content_type_image {
+.preview__image_content_type_open {
   background: none;
   padding: 0;
   max-height: 75vh;
@@ -13,7 +13,7 @@
   margin: auto;
 }
 
-.popup__image {
+.preview__image {
   object-fit: cover;
   max-width: 100%;
 }
