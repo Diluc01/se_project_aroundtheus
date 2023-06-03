@@ -13,12 +13,12 @@
   margin: auto;
 }
 
-.preview__image {
+.modal__preview-image {
   object-fit: cover;
   max-width: 100%;
 }
 
-.preview__caption {
+.modal__preview-caption {
   position: absolute;
   left: 0;
   top: calc(100% + 10px);

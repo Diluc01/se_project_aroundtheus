@@ -36,8 +36,8 @@ const addCardModal = document.querySelector("#add-card-modal");
 const imageModal = document.querySelector("#preview-image-modal");
 const profileFormElement = editProfileModal.querySelector(".modal__form");
 const addCardFormElement = addCardModal.querySelector(".modal__form");
-const modalImageElement = imageModal.querySelector(".preview__image");
-const modalCaption = imageModal.querySelector(".preview__caption");
+const modalImageElement = imageModal.querySelector(".modal__preview-image");
+const modalCaption = imageModal.querySelector(".modal__preview-caption");
 
 //buttons and other DOM nodes
 const profileEditButton = document.querySelector(".profile__edit-button");
