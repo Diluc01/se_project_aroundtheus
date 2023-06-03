@@ -39,51 +39,63 @@
       </main>
     </div>
 
-    <div class="modal" id="profile-edit-modal">
-      <div class="modal__container">
+    <div class="modal" id="edit-modal">
+      <div class="modal__content">
         <button class="modal__close" id="modal-close-button"></button>
-        <p class="modal__heading">Edit Profile</p>
-        <form class="modal__form">
+        <h3 class="modal__title">Edit Profile</h3>
+        <form class="modal__form" id="edit-profile-form">
           <input
             type="text"
-            name="title"
+            name="name"
             id="profile-title-input"
             placeholder="Name"
-            class="modal__title"
+            class="modal__input modal__input_type_name"
           />
           <input
             type="text"
             name="description"
             id="profile-description-input"
             placeholder="Description"
-            class="modal__description"
+            class="modal__input modal__input_type_description"
           />
           <button type="submit" class="modal__button">Save</button>
         </form>
       </div>
     </div>
 
-    <div class="modal" id="profile-add-modal">
-      <div class="modal__container">
-        <button class="modal__close" id="modal-close-button"></button>
-        <p class="modal__heading">New place</p>
+    <div class="modal" id="add-card-modal">
+      <div class="modal__content">
+        <button
+          class="modal__close"
+          id="modal-close-button"
+          type="button"
+        ></button>
+        <h3 class="modal__title">New place</h3>
         <form class="modal__form" id="add-card-form">
           <input
             type="text"
             name="title"
             id="profile-title2-input"
             placeholder="Title"
-            class="modal__title input_type_title"
+            class="modal__input input_type_title"
           />
           <input
             type="text"
             name="url"
             id="profile-url-input"
             placeholder="Image URL"
-            class="modal__description input_type_url"
+            class="modal__input input_type_url"
           />
           <button type="submit" class="modal__button">Save</button>
         </form>
+      </div>
+    </div>
+
+    <div class="modal" id="preview-image-modal">
+      <div class="preview__image_content preview__image_content_type_image">
+        <button type="button" class="modal__close"></button>
+        <img class="popup__image" src="" alt="" />
+        <p class="preview__caption"></p>
       </div>
     </div>
 
@@ -93,10 +105,11 @@
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button class="card__like-button" type="button"></button>
+          <button class="card__trash-button" type="button"></button>
         </div>
       </li>
     </template>
 
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/Index.js"></script>
   </body>
 </html>
