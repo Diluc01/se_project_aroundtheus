@@ -10,6 +10,7 @@
 .card__image {
   width: 282px;
   height: 282px;
+  cursor: pointer;
 }
 
 .card__description {
@@ -45,6 +46,7 @@
   padding: 0;
   margin: 0;
   flex-shrink: 0;
+  transition: opacity 1s linear;
 }
 
 .card__trash-button {
@@ -55,6 +57,7 @@
   position: absolute;
   right: 15px;
   top: 18px;
+  transition: opacity 1s linear;
 }
 
 .card__trash-button:hover {

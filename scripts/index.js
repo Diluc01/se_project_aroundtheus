@@ -81,11 +81,11 @@ function handleProfileFormSubmit(evt) {
 
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
-  console.log(cardTitleInput);
   const name = cardTitleInput.value;
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardsWrap);
   closeModal(addCardModal);
+  addCardFormElement.reset();
 }
 
 function getCardElement(data) {
@@ -109,6 +109,7 @@ function getCardElement(data) {
 
   cardImage.addEventListener("click", () => {
     modalImageElement.src = data.link;
+    modalImageElement.alt = data.name;
     modalCaption.textContent = data.name;
     openModal(imageModal);
   });
@@ -135,5 +136,7 @@ addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardModalCloseButton.addEventListener("click", () =>
   closeModal(addCardModal)
 );
+
+popupModalCloseButton.addEventListener("click", () => closeModal(imageModal));
 
 initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
