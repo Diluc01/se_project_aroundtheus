@@ -73,6 +73,10 @@
   align-items: center;
 }
 
+.modal__label {
+  position: relative;
+}
+
 .modal__input {
   border: none;
   border-bottom: 1px solid #000;
@@ -85,6 +89,17 @@
   line-height: 17px;
   color: #000;
   padding-bottom: 13px;
+}
+
+.modal__error {
+  font-size: 12px;
+  line-height: 15px;
+  color: red;
+  /*opacity: 0;*/
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  transition: opacity 0.3s;
 }
 
 .modal__button {

@@ -44,20 +44,36 @@
         <button class="modal__close" id="modal-close-button"></button>
         <h3 class="modal__title">Edit Profile</h3>
         <form class="modal__form" id="edit-profile-form">
-          <input
-            type="text"
-            name="name"
-            id="profile-title-input"
-            placeholder="Name"
-            class="modal__input modal__input_type_name"
-          />
-          <input
-            type="text"
-            name="description"
-            id="profile-description-input"
-            placeholder="Description"
-            class="modal__input modal__input_type_description"
-          />
+          <label class="modal__label">
+            <input
+              type="text"
+              name="name"
+              id="profile-title-input"
+              placeholder="Name"
+              class="modal__input modal__input_type_name"
+              maxlength="40"
+              minlength="2"
+              required
+            />
+            <span class="modal__error" id="profile-title-input-error"
+              >error</span
+            >
+          </label>
+          <label class="modal__label">
+            <input
+              type="text"
+              name="description"
+              id="profile-description-input"
+              placeholder="Description"
+              class="modal__input modal__input_type_description"
+              maxlength="200"
+              minlength="2"
+              required
+            />
+            <span class="modal__error" id="profile-description-input-error"
+              >error</span
+            >
+          </label>
           <button type="submit" class="modal__button">Save</button>
         </form>
       </div>
@@ -68,22 +84,31 @@
         <button class="modal__close" type="button"></button>
         <h3 class="modal__title">New place</h3>
         <form class="modal__form" id="add-card-form">
-          <input
-            type="text"
-            name="title"
-            id="profile-title2-input"
-            placeholder="Title"
-            class="modal__input modal__input_type_title"
-            required
-          />
-          <input
-            type="url"
-            name="url"
-            id="profile-url-input"
-            placeholder="Image URL"
-            class="modal__input modal__input_type_url"
-            required
-          />
+          <label class="modal__label">
+            <input
+              type="text"
+              name="title"
+              id="profile-title2-input"
+              placeholder="Title"
+              class="modal__input modal__input_type_title"
+              required
+            />
+            <span class="modal__error" id="profile-title2-input-error"
+              >error</span
+            >
+          </label>
+          <label class="modal__label">
+            <input
+              type="url"
+              name="url"
+              id="profile-url-input"
+              placeholder="Image URL"
+              class="modal__input modal__input_type_url"
+              required
+            />
+            <span class="modal__error" id="profile-url-input-error">error</span>
+          </label>
+
           <button type="submit" class="modal__button">Save</button>
         </form>
       </div>
@@ -109,5 +134,6 @@
     </template>
 
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/validation.js" defer></script>
   </body>
 </html>
