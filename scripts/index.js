@@ -144,8 +144,8 @@ popupModalCloseButton.addEventListener("click", () => closeModal(imageModal));
 initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
 
 const isEscEvent = (evt, action) => {
-  const activeModal = document.querySelector("modal_is-opened");
-  if (evt.which === "Escape") {
+  const activeModal = document.querySelector(".modal_is-opened");
+  if (evt.key === "Escape") {
     action(activeModal);
   }
 };
