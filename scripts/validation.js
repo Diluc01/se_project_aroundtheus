@@ -24,6 +24,7 @@ function checkInputValidity(formEl, inputEl, options) {
 }
 
 function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
+  console.log("toggleButtonState");
   let foundInvalid = false;
 
   inputEls.forEach((inputEl) => {
@@ -48,7 +49,7 @@ function setEventListeners(formEl, options) {
   inputEls.forEach((inputEl) => {
     inputEl.addEventListener("input", (e) => {
       checkInputValidity(formEl, inputEl, options);
-      toggleButtonState(inputEls, submitButton.options);
+      toggleButtonState(inputEls, submitButton, options);
     });
   });
 }

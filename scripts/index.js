@@ -61,10 +61,12 @@ const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keyup", handleEscUp);
 }
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keyup", handleEscUp);
 }
 
 function renderCard(cardData, wrapper) {
@@ -140,3 +142,15 @@ addCardModalCloseButton.addEventListener("click", () =>
 popupModalCloseButton.addEventListener("click", () => closeModal(imageModal));
 
 initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
+
+const isEscEvent = (evt, action) => {
+  const activeModal = document.querySelector("modal_is-opened");
+  if (evt.which === "Escape") {
+    action(activeModal);
+  }
+};
+
+const handleEscUp = (evt) => {
+  evt.preventDefault;
+  isEscEvent(evt, closeModal);
+};

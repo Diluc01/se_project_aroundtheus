@@ -70,7 +70,7 @@
   flex-direction: column;
   gap: 10px;
   margin-top: 54px;
-  align-items: center;
+  align-items: unset;
 }
 
 .modal__label {
@@ -121,6 +121,10 @@
 
 .modal__button:hover {
   opacity: 0.8;
+}
+
+.modal__button_disabled {
+  opacity: 20%;
 }
 
 @media screen and (max-width: 630px) {
