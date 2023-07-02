@@ -154,3 +154,16 @@ const handleEscUp = (evt) => {
   evt.preventDefault;
   isEscEvent(evt, closeModal);
 };
+
+let modal;
+
+document.addEventListener("click", (event) => {
+  if (
+    event.target == modal ||
+    Array.from(modal.children).includes(event.target)
+  ) {
+    modal.classList.add("active");
+  } else {
+    modal.classList.remove("active");
+  }
+});
