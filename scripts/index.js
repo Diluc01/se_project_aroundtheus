@@ -155,15 +155,14 @@ const handleEscUp = (evt) => {
   isEscEvent(evt, closeModal);
 };
 
-let modal;
+[editProfileModal, addCardModal, imageModal].forEach(modal => {
+  document.addEventListener("click", (event) => {
+    if (
+      event.target.classList.contains("modal") ||
+      event.target.classList.contains("modal__close")
+    ) {
+      closeModal(modal);
+    }  
+  })
+})
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target == modal ||
-    Array.from(modal.children).includes(event.target)
-  ) {
-    modal.classList.add("active");
-  } else {
-    modal.classList.remove("active");
-  }
-});
